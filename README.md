@@ -86,3 +86,75 @@ Run the following command to start the React frontend server:
 npm run dev
 ```
 
+
+## Backend API Endpoints
+
+### GET /api/contacts
+Fetch all contacts from the database.
+
+
+### POST /api/contacts
+Create a new contact.
+
+### GET /api/contacts/id
+Fetch a contact by ID.
+
+### PUT /api/contacts/id
+Update an existing contact by ID.
+
+### DELETE /api/contacts/
+Delete a contact by ID.
+
+
+## MongoDB Schema
+
+The contact schema is defined in backend/models/contact.js:
+
+```bash
+// contactSchema
+const contactSchema = new mongoose.Schema({
+  firstName: { 
+    type: String, 
+    required: true 
+   },
+  lastName: { 
+    type: String, 
+    required: true
+  },
+  email: { 
+    type: String, 
+    required: true, 
+    unique: true
+  },
+  phone: { 
+    type: String, 
+    required: true 
+  },
+  company: { 
+    type: String,
+    required: true 
+  },
+  jobTitle: { 
+    type: String ,
+    required: true
+  },
+});
+```
+
+
+
+## Features
+
+- *Add New Contacts* : 
+  The "Create a Contact" form allows users to add new contacts to the database.
+- *View Contacts* : All contacts are displayed in a table format on the homepage, with options to edit or delete each contact.
+- *Edit Contact* : Users can edit existing contacts and update their information.
+- *Delete Contact* : Users can delete contacts from the database.
+
+
+## 🚀 About Me
+
+Hi! I'm a passionate software developer specializing in full-stack development. I have experience with React, Node.js, MongoDB, and building modern, user-friendly applications. I enjoy solving real-world problems through clean, efficient code and constantly learning new technologies to enhance my skills. 😊
+
+
+
