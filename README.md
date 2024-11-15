@@ -13,6 +13,9 @@ The **Contact Management App** is a full-stack web application that allows users
 ### CreateContact
 ![image alt](https://github.com/helloankitpandey/Contact_Management/blob/8d11097ce2ab599e1727f8b12b5aba747d0a08b9/Screenshot%202024-11-15%20230547.png)
 
+### Update Contact
+![image alt](https://github.com/helloankitpandey/Contact_Management/blob/35fda2900c34e1fed225c7bebee4b57e4ae5006e/Screenshot%202024-11-15%20230531.png)
+
 ### Features:
 - **Add, Edit, and Delete Contacts**: Users can add, edit, and remove contacts from their contact list.
 - **Responsive UI**: The user interface is built using **Material-UI** components for a clean and modern design.
