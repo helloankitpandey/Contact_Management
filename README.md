@@ -4,8 +4,14 @@
 ## Description
 The **Contact Management App** is a full-stack web application that allows users to manage contacts. It enables users to perform **CRUD** (Create, Read, Update, Delete) operations on contacts, with information such as first name, last name, email, phone number, company, and job title. The backend is built using **Node.js/Express** and the frontend is developed with **React**. The application uses **MongoDB** as the database to store contact data.
 
-##ScreenShot
+## ScreenShot
+
+### View All Contacts
+
 ![image alt](https://github.com/helloankitpandey/Contact_Management/blob/c81b158a9bf2bea1e121d73bc70ba435d1f78764/Screenshot%202024-11-15%20230315.png)
+
+### CreateContact
+![image alt](https://github.com/helloankitpandey/Contact_Management/blob/8d11097ce2ab599e1727f8b12b5aba747d0a08b9/Screenshot%202024-11-15%20230547.png)
 
 ### Features:
 - **Add, Edit, and Delete Contacts**: Users can add, edit, and remove contacts from their contact list.
