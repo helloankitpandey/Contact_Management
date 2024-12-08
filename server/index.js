@@ -8,29 +8,26 @@ import connectDB from './config/db.js';
 import appRouter from './routes/contactRoutes.js';
 import cors from "cors";
 
-
-
 // Load environment variables from file
 dotenv.config();
 
 // connecting to the databse
 connectDB();
 
-
 const app = express();
-
 
 //middleare for cors error
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
-
 // Parse JSON request bodies middleware
 app.use(bodyParser.json());
 
+app.get("/", async(req, res) => {
+    res.send("Server Connected and running smoothly")
+} )
 
 // routes
 app.use("/api", appRouter);
-
 
 // Error handling middleware
 app.use((err, req, res, next) => {
