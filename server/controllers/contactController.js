@@ -22,6 +22,8 @@ export const getContacts = async (req, res) => {
   try {
     const contacts = await Contact.find();
     res.status(200).json(contacts);
+    console.log("get all contacts");
+    
   } catch (error) {
     res.status(500).json({ error: 'Failed to retrieve contacts' });
   }
