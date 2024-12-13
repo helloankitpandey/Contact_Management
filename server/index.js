@@ -23,6 +23,8 @@ app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use(bodyParser.json());
 
 app.get("/", async(req, res) => {
+    console.log("Akki Coder");
+    
     res.send("Server Connected and running smoothly")
 } )
 
