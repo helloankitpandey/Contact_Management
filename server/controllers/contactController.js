@@ -40,7 +40,8 @@ export const getContactById = async (req, res) => {
     if (!contact) {
       return res.status(404).json({ error: 'Contact not found' }); // Handle case where contact doesn't exist
     }
-
+    console.log("get single contact");
+    
     res.status(200).json(contact); // Respond with the found contact
   } catch (error) {
     res.status(500).json({ error: 'Failed to retrieve contact' }); // Handle server errors
