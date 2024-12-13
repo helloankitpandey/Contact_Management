@@ -8,8 +8,6 @@ export const createContact = async (req, res) => {
       const contact = new Contact(req.body);
       await contact.save();
       res.status(201).json({ message: 'Contact created successfully', contact });
-      console.log("create new contact");
-      
     } catch (error) {
       if (error.code === 11000) {
         res.status(400).json({ error: 'Duplicate entry: Email already exists' });
@@ -40,7 +38,7 @@ export const getContactById = async (req, res) => {
     if (!contact) {
       return res.status(404).json({ error: 'Contact not found' }); // Handle case where contact doesn't exist
     }
-    
+
     res.status(200).json(contact); // Respond with the found contact
   } catch (error) {
     res.status(500).json({ error: 'Failed to retrieve contact' }); // Handle server errors
