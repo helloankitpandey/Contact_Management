@@ -8,8 +8,6 @@ const appRouter = express.Router();
 // here all routes for backend
 appRouter.post('/contacts', createContact); 
 appRouter.get('/contacts', getContacts );
-console.log("Chnage");
-
 appRouter.get('/contacts/:id', getContactById);
 appRouter.put('/contacts/:id', updateContact);
 appRouter.delete('/contacts/:id', deleteContact);
