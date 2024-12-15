@@ -15,8 +15,6 @@ const App = () => {
   useEffect(() => {
     const fetchContacts = async () => {
       try {
-        console.log("Chnage");
-
         // here it is hosted on localhost
         const response = await axios.get('http://localhost:3000/api/contacts');
         setContacts(response.data);
