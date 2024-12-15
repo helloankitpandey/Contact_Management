@@ -30,8 +30,6 @@ app.get("/", async(req, res) => {
 
 // routes
 app.use("/api", appRouter);
-console.log("Chnage");
-
 
 // Error handling middleware
 app.use((err, req, res, next) => {
