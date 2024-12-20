@@ -20,6 +20,8 @@ export const createContact = async (req, res) => {
 // GET => It Retrieve all contacts
 export const getContacts = async (req, res) => {
   try {
+    console.log("checking the try block");
+
     const contacts = await Contact.find();
     res.status(200).json(contacts);
   } catch (error) {
