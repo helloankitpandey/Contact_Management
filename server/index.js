@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.get("/", async(req, res) => {
     console.log("Akki Coder");
     
-    res.send("Server Connected and running smoothly and I am Ankit Pandey")
+    res.send("Server Connected and running smoothly")
 } )
 
 // routes
